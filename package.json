@@ -1,0 +1,22 @@
+{
+  "name": "vinhuni-ai-campus",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "packages/glass-ui"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @vinhuni/web",
+    "build": "npm run build -w @vinhuni/web",
+    "start": "npm run start -w @vinhuni/web",
+    "lint": "npm run lint -w @vinhuni/web",
+    "typecheck": "npm run typecheck -w @vinhuni/web",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "vitest": "^5.1.1"
+  }
+}
