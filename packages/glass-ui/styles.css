@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light;
+  --navy: #003366;
+  --blue: #0056b3;
+  --cyan: #00b4d8;
+  --base: #f1f5f9;
+  --surface: #ffffffdd;
+  --ink: #122b43;
+  --muted: #475f75;
+  --line: #cddce9;
+  --soft: #e7f2fc;
+  --accent: var(--blue);
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --base: #0b1725;
+  --surface: #142539ee;
+  --ink: #e7f2fc;
+  --muted: #b1c5d7;
+  --line: #344e66;
+  --soft: #1b3550;
+  --accent: #81d9fa;
+}
+.glass { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: 0 10px 28px #002c5710; }
+.quiet, .primary { min-height: 44px; min-width: 44px; display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 8px 13px; border: 1px solid var(--line); border-radius: 12px; font-weight: 650; transition: background .15s, transform .15s; }
+.quiet { background: var(--surface); color: var(--ink); }
+.primary { background: var(--blue); color: white; border-color: transparent; }
+.primary:hover { background: var(--navy); }
+button:active { transform: translateY(1px); }
